@@ -4,97 +4,64 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className="w-full">
-      {/* Hero Section */}
-      <img src={carImage} alt="Car" className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover" />
+    <div>
+      <img src={carImage} alt="Car" height="571px" width="100%" />
+      <h2 style={{ textAlign: 'center', color: 'blue', marginTop: '20px', fontSize: '25px' }}>"Your Cab is Booked! Arrival in 5 Minutes Across Maharashtra"</h2>
+      <button style={{ backgroundColor: 'blue', borderRadius: "10px", border: "none", color:"white", width: '150px', height: "40px", marginLeft: '45%' }}> <Link to="/contact">Book Now </Link></button>
 
-      <h2 className="text-center text-blue-600 mt-5 text-lg sm:text-xl md:text-2xl px-3">
-        "Your Cab is Booked! Arrival in 5 Minutes Across Maharashtra"
-      </h2>
+      <div style={{ display: "flex", gap: "35px", marginTop: "20px", marginLeft: "10px" }}>
+        <img src="https://i.postimg.cc/2jWGnHCk/image.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
+        <img src="https://i.postimg.cc/tgrSm7c9/image-1.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
+        <img src="https://i.postimg.cc/3RdSMYMm/image-1.webp" alt="" height='180px' style={{ borderRadius: "10px" }} />
+        <img src="https://i.postimg.cc/SR9gsdxK/image-2.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
 
-      <div className="flex justify-center mt-4">
-        <Link to="/contact">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-            Book Now
-          </button>
-        </Link>
+
       </div>
 
-      {/* Image Gallery */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-3 mt-6">
-        {[
-          "https://i.postimg.cc/2jWGnHCk/image.jpg",
-          "https://i.postimg.cc/tgrSm7c9/image-1.jpg",
-          "https://i.postimg.cc/3RdSMYMm/image-1.webp",
-          "https://i.postimg.cc/SR9gsdxK/image-2.jpg",
-          "https://i.postimg.cc/Zqqj3452/image-3.jpg",
-          "https://i.postimg.cc/dVw5s8Pq/image-4.jpg",
-          "https://i.postimg.cc/85JHK4Wb/image-5.jpg",
-          "https://i.postimg.cc/MH1YxG9M/image-6.jpg"
-        ].map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt="gallery"
-            className="w-full h-[150px] object-cover rounded-lg"
-          />
-        ))}
+      <div style={{ display: "flex", gap: "30px", marginTop: "20px", marginLeft: "10px", }}>
+        <img src="https://i.postimg.cc/Zqqj3452/image-3.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
+        <img src="https://i.postimg.cc/dVw5s8Pq/image-4.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
+        <img src="https://i.postimg.cc/85JHK4Wb/image-5.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
+        <img src="https://i.postimg.cc/MH1YxG9M/image-6.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
+
       </div>
 
-      {/* Why Choose Section */}
-      <h2 className="text-center text-2xl md:text-3xl mt-10">
-        <span className="text-blue-600">WHY CHOOSE </span>
-        <span className="text-orange-500">SAI SHUBHAM TRAVEL</span>
-      </h2>
+      <h2 style={{ fontSize: '30px', textAlign: 'center', marginTop: '40px' }}> <span style={{ color: 'blue' }}>WHY CHOOSE </span> <span style={{ color: 'orange' }}>SAI SHUBHAM TRAVEL</span></h2>
 
-      <p className="text-center mt-4 px-4">
-        Looking for cab services anywhere in Maharashtra? Then Sai Shubham Tours and Travels is the right place for you.
-      </p>
+      <p style={{ textAlign: 'center', marginTop: '20px' }}>Looking for cab services anywhere in Maharashtra? Then Sai Shubham Tours and Travels is the right place for you.</p>
+      <div style={{ display: "flex", justifyContent: "space-around", marginTop: "80px" }}>
+        <div style={{ marginTop: "40px" }}>
+          <h2>Featured Luxury Cars</h2>
+          <p>We have a range of all types of cabs in shirdi,<br /> Maharashtra. Book Now.</p> <br />
 
-      <div className="flex flex-col md:flex-row justify-around items-center mt-10 gap-6 px-4">
-        {/* Left Content */}
-        <div className="text-center md:text-left">
-          <h2 className="font-semibold">Featured Luxury Cars</h2>
-          <p>We have a range of all types of cabs in Shirdi, Maharashtra. Book Now.</p>
+          <h2>Shirdi Temple Package</h2>
+          <p>Special Shirdi Temple Packages by car. Enquire <br /> now.</p><br />
 
-          <h2 className="mt-4 font-semibold">Shirdi Temple Package</h2>
-          <p>Special Shirdi Temple Packages by car. Enquire now.</p>
-
-          <h2 className="mt-4 font-semibold">Available 24x7 Car</h2>
-          <p>Our Help Representatives are available on calls for any inquiry.</p>
+          <h2>Available 24x7 Car</h2>
+          <p>Our Help Representatives are available on calls <br /> for any inquiry.</p>
         </div>
 
-        {/* Image */}
         <div>
-          <img
-            src="https://car-o-man.com/wp-content/uploads/2020/09/caroman-car-service-lbnagar-hyderabad.png"
-            alt="service"
-            className="w-[250px] sm:w-[300px] md:w-[350px]"
-          />
+          <img src="https://car-o-man.com/wp-content/uploads/2020/09/caroman-car-service-lbnagar-hyderabad.png" alt="" height="400px" />
         </div>
 
-        {/* Right Content */}
-        <div className="text-center md:text-left">
-          <h2 className="font-semibold">Featured Luxury Cars</h2>
-          <p>We have a range of all types of cabs in Shirdi, Maharashtra. Book Now.</p>
+        <div style={{ marginTop: "40px" }}>
+          <h2>Featured Luxury Cars</h2>
+          <p>We have a range of all types of cabs in shirdi,<br /> Maharashtra. Book Now.</p> <br />
 
-          <h2 className="mt-4 font-semibold">Shirdi Temple Package</h2>
-          <p>Special Shirdi Temple Packages by car. Enquire now.</p>
+          <h2>Shirdi Temple Package</h2>
+          <p>Special Shirdi Temple Packages by car. Enquire <br /> now.</p><br />
 
-          <h2 className="mt-4 font-semibold">Available 24x7 Car</h2>
-          <p>Our Help Representatives are available on calls for any inquiry.</p>
+          <h2>Available 24x7 Car</h2>
+          <p>Our Help Representatives are available on calls <br /> for any inquiry.</p>
         </div>
       </div>
 
-      {/* Footer Heading */}
-      <h1 className="text-center text-3xl md:text-4xl mt-12">
-        <span className="text-blue-600">BEST TAXI FOR </span>
-        <span className="text-green-600">TRAVEL</span>
-      </h1>
+      <h1 style={{ fontSize: '40px', textAlign: 'center', marginTop: '60px' }}><span style={{ color: 'blue' }}>BEST TAXI FOR</span> <span style={{ color: 'green' }}>TRAVEL</span></h1>
+      <hr />
 
-      <hr className="mt-4" />
     </div>
   )
 }
 
-export default Home;
+export default Home
