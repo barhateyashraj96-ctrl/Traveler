@@ -1,67 +1,105 @@
-import React from 'react'
+import React from 'react';
 import carImage from '../assets/car2-img.jpg';
 import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div>
-      <img src={carImage} alt="Car" height="571px" width="100%" />
-      <h2 style={{ textAlign: 'center', color: 'blue', marginTop: '20px', fontSize: '25px' }}>"Your Cab is Booked! Arrival in 5 Minutes Across Maharashtra"</h2>
-      <button style={{ backgroundColor: 'blue', borderRadius: "10px", border: "none", color:"white", width: '150px', height: "40px", marginLeft: '45%' }}> <Link to="/contact">Book Now </Link></button>
+    <div className="container-fluid p-0">
 
-      <div style={{ display: "flex", gap: "35px", marginTop: "20px", marginLeft: "10px" }}>
-        <img src="https://i.postimg.cc/2jWGnHCk/image.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
-        <img src="https://i.postimg.cc/tgrSm7c9/image-1.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
-        <img src="https://i.postimg.cc/3RdSMYMm/image-1.webp" alt="" height='180px' style={{ borderRadius: "10px" }} />
-        <img src="https://i.postimg.cc/SR9gsdxK/image-2.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
+      {/* Hero Image */}
+      <img src={carImage} alt="Car" className="img-fluid w-100" />
 
+      {/* Heading */}
+      <h2 className="text-center text-primary mt-3 fs-5 fs-md-4 fs-lg-3">
+        "Your Cab is Booked! Arrival in 5 Minutes Across Maharashtra"
+      </h2>
 
+      {/* Button */}
+      <div className="text-center mt-3">
+        <Link to="/contact" className="btn btn-primary px-4 py-2">
+          Book Now
+        </Link>
       </div>
 
-      <div style={{ display: "flex", gap: "30px", marginTop: "20px", marginLeft: "10px", }}>
-        <img src="https://i.postimg.cc/Zqqj3452/image-3.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
-        <img src="https://i.postimg.cc/dVw5s8Pq/image-4.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
-        <img src="https://i.postimg.cc/85JHK4Wb/image-5.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
-        <img src="https://i.postimg.cc/MH1YxG9M/image-6.jpg" alt="" height='180px' style={{ borderRadius: "10px" }} />
-
-      </div>
-
-      <h2 style={{ fontSize: '30px', textAlign: 'center', marginTop: '40px' }}> <span style={{ color: 'blue' }}>WHY CHOOSE </span> <span style={{ color: 'orange' }}>SAI SHUBHAM TRAVEL</span></h2>
-
-      <p style={{ textAlign: 'center', marginTop: '20px' }}>Looking for cab services anywhere in Maharashtra? Then Sai Shubham Tours and Travels is the right place for you.</p>
-      <div style={{ display: "flex", justifyContent: "space-around", marginTop: "80px" }}>
-        <div style={{ marginTop: "40px" }}>
-          <h2>Featured Luxury Cars</h2>
-          <p>We have a range of all types of cabs in shirdi,<br /> Maharashtra. Book Now.</p> <br />
-
-          <h2>Shirdi Temple Package</h2>
-          <p>Special Shirdi Temple Packages by car. Enquire <br /> now.</p><br />
-
-          <h2>Available 24x7 Car</h2>
-          <p>Our Help Representatives are available on calls <br /> for any inquiry.</p>
-        </div>
-
-        <div>
-          <img src="https://car-o-man.com/wp-content/uploads/2020/09/caroman-car-service-lbnagar-hyderabad.png" alt="" height="400px" />
-        </div>
-
-        <div style={{ marginTop: "40px" }}>
-          <h2>Featured Luxury Cars</h2>
-          <p>We have a range of all types of cabs in shirdi,<br /> Maharashtra. Book Now.</p> <br />
-
-          <h2>Shirdi Temple Package</h2>
-          <p>Special Shirdi Temple Packages by car. Enquire <br /> now.</p><br />
-
-          <h2>Available 24x7 Car</h2>
-          <p>Our Help Representatives are available on calls <br /> for any inquiry.</p>
+      {/* Image Gallery */}
+      <div className="container mt-4">
+        <div className="row g-3 justify-content-center">
+          {[
+            "https://i.postimg.cc/2jWGnHCk/image.jpg",
+            "https://i.postimg.cc/tgrSm7c9/image-1.jpg",
+            "https://i.postimg.cc/3RdSMYMm/image-1.webp",
+            "https://i.postimg.cc/SR9gsdxK/image-2.jpg",
+            "https://i.postimg.cc/Zqqj3452/image-3.jpg",
+            "https://i.postimg.cc/dVw5s8Pq/image-4.jpg",
+            "https://i.postimg.cc/85JHK4Wb/image-5.jpg",
+            "https://i.postimg.cc/MH1YxG9M/image-6.jpg"
+          ].map((img, index) => (
+            <div key={index} className="col-6 col-sm-4 col-md-3">
+              <img src={img} alt="" className="img-fluid rounded" />
+            </div>
+          ))}
         </div>
       </div>
 
-      <h1 style={{ fontSize: '40px', textAlign: 'center', marginTop: '60px' }}><span style={{ color: 'blue' }}>BEST TAXI FOR</span> <span style={{ color: 'green' }}>TRAVEL</span></h1>
+      {/* Why Choose */}
+      <h2 className="text-center mt-5">
+        <span className="text-primary">WHY CHOOSE </span>
+        <span className="text-warning">SAI SHUBHAM TRAVEL</span>
+      </h2>
+
+      <p className="text-center mt-3 px-3">
+        Looking for cab services anywhere in Maharashtra? Then Sai Shubham Tours and Travels is the right place for you.
+      </p>
+
+      {/* Features Section */}
+      <div className="container mt-5">
+        <div className="row align-items-center text-center text-md-start">
+
+          {/* Left */}
+          <div className="col-12 col-md-4 mb-4">
+            <h5>Featured Luxury Cars</h5>
+            <p>We have a range of all types of cabs in Shirdi, Maharashtra.</p>
+
+            <h5>Shirdi Temple Package</h5>
+            <p>Special Shirdi Temple Packages by car.</p>
+
+            <h5>Available 24x7 Car</h5>
+            <p>Our Help Representatives are always available.</p>
+          </div>
+
+          {/* Image */}
+          <div className="col-12 col-md-4 text-center mb-4">
+            <img
+              src="https://car-o-man.com/wp-content/uploads/2020/09/caroman-car-service-lbnagar-hyderabad.png"
+              alt=""
+              className="img-fluid"
+            />
+          </div>
+
+          {/* Right */}
+          <div className="col-12 col-md-4 mb-4">
+            <h5>Featured Luxury Cars</h5>
+            <p>We have a range of all types of cabs in Shirdi, Maharashtra.</p>
+
+            <h5>Shirdi Temple Package</h5>
+            <p>Special Shirdi Temple Packages by car.</p>
+
+            <h5>Available 24x7 Car</h5>
+            <p>Our Help Representatives are always available.</p>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Footer Heading */}
+      <h1 className="text-center mt-5">
+        <span className="text-primary">BEST TAXI FOR </span>
+        <span className="text-success">TRAVEL</span>
+      </h1>
+
       <hr />
-
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
