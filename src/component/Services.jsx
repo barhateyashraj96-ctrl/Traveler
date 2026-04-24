@@ -1,9 +1,9 @@
 import React from 'react'
-import ser from '../assets/dent repairs.jpg'
+import services from '../assets/dent repairs.jpg'
 function Services() {
   return (
     <div>
-      <img src={ser} alt="" height="570px" width="100%" />
+      <img src={services} alt="Car" className="img-fluid w-100" />
     </div>
   )
 }

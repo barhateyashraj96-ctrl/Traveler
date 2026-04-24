@@ -3,7 +3,7 @@ import car from '../assets/mercidies.jpg'
 function Gallery() {
   return (
     <div>
-      <img src={car} alt="" height="570px" width="100%" />
+      <img src={car} alt="Car" className="img-fluid w-100" />
     </div>
   )
 }
