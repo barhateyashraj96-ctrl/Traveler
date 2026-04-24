@@ -1,5 +1,5 @@
 import React from 'react';
-import carImage from '../assets/car2-img.jpg';
+import carImage from '../assets/image.png';
 import { Link } from 'react-router-dom';
 
 function Home() {
