@@ -1,5 +1,5 @@
 import React from 'react'
-import car from '../assets/mercidies.jpg'
+import car from '../assets/download.jpg'
 function Gallery() {
   return (
     <div>
