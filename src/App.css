@@ -223,3 +223,9 @@ input::placeholder {
   background-color: brown;
   color: black;
 }
+
+
+.Destination{
+  color: blueviolet;
+  font-size: 60px;
+}

@@ -34,7 +34,7 @@ export default function Gallery() {
 
   return (
     <section className="gallery">
-      <h1>Explore Our Destinations</h1>
+      <h1 className="Destination">Explore Our Destinations</h1>
 
       {/* Filters */}
       <div className="filters">
