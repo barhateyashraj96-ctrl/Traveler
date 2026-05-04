@@ -1,13 +1,14 @@
 import React from 'react';
 import carImage from '../assets/image.png';
 import { Link } from 'react-router-dom';
+import './Home.css'; // ✅ make sure this is added
 
 function Home() {
   return (
     <div className="container-fluid p-0">
 
       {/* Hero Image */}
-      <img src={carImage} alt="Car" className="img-fluid w-100" />
+      <img src={carImage} alt="Car" className="img-fluid w-100 hover-zoom" />
 
       {/* Heading */}
       <h2 className="text-center text-primary mt-3 fs-5 fs-md-4 fs-lg-3">
@@ -35,7 +36,7 @@ function Home() {
             "https://i.postimg.cc/MH1YxG9M/image-6.jpg"
           ].map((img, index) => (
             <div key={index} className="col-6 col-sm-4 col-md-3">
-              <img src={img} alt="" className="img-fluid rounded" />
+              <img src={img} alt="" className="img-fluid rounded hover-zoom" />
             </div>
           ))}
         </div>
@@ -72,7 +73,7 @@ function Home() {
             <img
               src="https://car-o-man.com/wp-content/uploads/2020/09/caroman-car-service-lbnagar-hyderabad.png"
               alt=""
-              className="img-fluid"
+              className="img-fluid hover-zoom"
             />
           </div>
 
