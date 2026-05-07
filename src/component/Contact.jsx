@@ -29,7 +29,7 @@ function Contact() {
       <h5>
         <b>
           <span style={{ color: 'blue' }}>Contact Us</span>{' '}
-          <span style={{ color: 'yellow' }}>Sai Shubham Tours and Travels</span>
+          <span style={{ color: 'yellow' }}>Yash Tours and Travels</span>
         </b>
       </h5>
 
@@ -75,9 +75,9 @@ function Contact() {
       {/* footer */}
       <div style={{ display: 'flex', justifyContent: 'space-evenly', paddingTop: '50px', marginTop:'92px' , background: 'black', color: 'white' }}>
         <div>
-          <h5><b>SAI SHUBHAM TOURS & TRAVEL</b></h5>
+          <h5><b>YASH TOURS & TRAVEL</b></h5>
           <p>
-            Sai Shubham Tours & Travel is your <br />
+            Yash Tours & Travel is your <br />
             gateway to unforgettable journeys <br />
             and adventures.
           </p>
@@ -85,7 +85,7 @@ function Contact() {
 
         <div>
           <h5>CONTACT</h5>
-          <h6>📖 saishubhamtours8994@gmail.com</h6>
+          <h6>📖 barhateyashraj96@gmail.com</h6>
           <h6>🚀 8669881059</h6>
         </div>
 

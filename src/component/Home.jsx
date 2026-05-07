@@ -46,7 +46,7 @@ function Home() {
       {/* Why Choose */}
       <h2 className="text-center mt-5">
         <span className="text-primary">WHY CHOOSE </span>
-        <span className="text-warning">SAI SHUBHAM TRAVEL</span>
+        <span className="text-warning">YASH TRAVEL</span>
       </h2>
 
       <p className="text-center mt-3 px-3">

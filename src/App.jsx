@@ -33,7 +33,7 @@ function App() {
 
         {/* Brand */}
         <Link className="navbar-brand fw-bold" to="/" onClick={handleNavClick}>
-          Sai Shubham Tours And Travels
+          Yash Tours And Travels
         </Link>
 
         {/* Toggle Button */}
