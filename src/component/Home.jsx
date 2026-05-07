@@ -22,26 +22,26 @@ function Home() {
         </Link>
       </div>
 
-     <div className="container mt-4">
-  <div className="row g-4 justify-content-center">
-    {[
-      "https://i.postimg.cc/2jWGnHCk/image.jpg",
-      "https://i.postimg.cc/tgrSm7c9/image-1.jpg",
-      "https://i.postimg.cc/3RdSMYMm/image-1.webp",
-      "https://i.postimg.cc/SR9gsdxK/image-2.jpg",
-      "https://i.postimg.cc/Zqqj3452/image-3.jpg",
-      "https://i.postimg.cc/dVw5s8Pq/image-4.jpg",
-      "https://i.postimg.cc/85JHK4Wb/image-5.jpg",
-      "https://i.postimg.cc/MH1YxG9M/image-6.jpg"
-    ].map((img, index) => (
-      <div key={index} className="col-6 col-sm-4 col-md-3">
-        <div className="gallery-card">
-          <img src={img} alt="" />
+      <div className="container mt-4">
+        <div className="row g-4 justify-content-center">
+          {[
+            "https://i.postimg.cc/2jWGnHCk/image.jpg",
+            "https://i.postimg.cc/tgrSm7c9/image-1.jpg",
+            "https://i.postimg.cc/3RdSMYMm/image-1.webp",
+            "https://i.postimg.cc/SR9gsdxK/image-2.jpg",
+            "https://i.postimg.cc/Zqqj3452/image-3.jpg",
+            "https://i.postimg.cc/dVw5s8Pq/image-4.jpg",
+            "https://i.postimg.cc/85JHK4Wb/image-5.jpg",
+            "https://i.postimg.cc/MH1YxG9M/image-6.jpg"
+          ].map((img, index) => (
+            <div key={index} className="col-6 col-sm-4 col-md-3">
+              <div className="gallery-card">
+                <img src={img} alt="" />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
 
       {/* Why Choose */}
       <h2 className="text-center mt-5">
