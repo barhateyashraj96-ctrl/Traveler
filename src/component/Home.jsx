@@ -50,7 +50,7 @@ function Home() {
       </h2>
 
       <p className="text-center mt-3 px-3">
-        Looking for cab services anywhere in Maharashtra? Then Sai Shubham Tours and Travels is the right place for you.
+        Looking for cab services anywhere in Maharashtra? Then Yash Tours and Travels is the right place for you.
       </p>
 
       {/* Features Section */}
