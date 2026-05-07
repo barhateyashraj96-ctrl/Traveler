@@ -1,0 +1,90 @@
+.about-container {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section h2 {
+  color: yellow;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Text */
+.call-text {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.call-btn {
+  margin-left: 10px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 7px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background: black;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer div {
+  margin: 10px;
+  max-width: 250px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 30vh;
+  }
+
+  .hero-section h2 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .call-text {
+    font-size: 14px;
+  }
+
+  .call-btn {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
