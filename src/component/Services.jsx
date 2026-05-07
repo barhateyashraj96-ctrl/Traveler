@@ -27,7 +27,7 @@ function Services() {
 
   return (
     <section className="services">
-      <h1>Our Travel Services</h1>
+      <h1 className='travelservices'>Our Travel Services</h1>
       <p className="subtitle">Explore the world with our amazing tour packages</p>
 
       <div className="services-container">
