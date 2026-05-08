@@ -15,7 +15,7 @@ function About() {
 
       <h5 className="call-text">
         You can book a car over a call in just 5 minutes.
-        <button className="call-btn">Call me now</button>
+        <button className="call-btn"><a href="tel:8669881059">Call Me Now</a></button>
       </h5>
 
       <h5 className="title">Yash Tours and Travels</h5>
