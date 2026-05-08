@@ -5,7 +5,7 @@ import './About.css'
 function About() {
   return (
     <div className="about-container">
-      
+
       <div
         className="hero-section"
         style={{ backgroundImage: `url(${Mountain})` }}
@@ -38,8 +38,8 @@ function About() {
 
         <div>
           <h5>CONTACT</h5>
-          <p>📩 barhateyashraj96@gmail.com</p>
-          <p>📲 9226094853</p>
+          <p>📩<a href="mailto:barhateyashraj96@gmail.com">barhateyashraj96@gmail.com</a></p>
+          <p>📲<a href="tel:9226094853">9226094853</a></p>
         </div>
 
         <div>
