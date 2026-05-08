@@ -71,8 +71,8 @@ function Contact() {
 
         <div>
           <h5>CONTACT</h5>
-          <p>📩 barhateyashraj96@gmail.com</p>
-          <p>📞 8669881059</p>
+          <p>📩<a href="mailto:barhateyashraj96@gmail.com">barhateyashraj96@gmail.com</a></p>
+          <p>📲<a href="tel:9226094853">9226094853</a></p>
         </div>
 
         <div>
