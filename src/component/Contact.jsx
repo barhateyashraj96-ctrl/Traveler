@@ -1,21 +1,38 @@
 import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
+import emailjs from '@emailjs/browser'
 import 'react-toastify/dist/ReactToastify.css'
 import './Contact.css'
 
 function Contact() {
   const [name, setname] = useState('')
   const [email, setemail] = useState('')
-  const [pass, setpass] = useState('')
+  const [message, setmessage] = useState('')
 
   function prit(e) {
     e.preventDefault()
 
-    toast.success("Form submitted successfully 🎉")
+    const templateParams = {
+      name: name,
+      email: email,
+      message: message,
+    }
 
-    setname('')
-    setemail('')
-    setpass('')
+    emailjs.send(
+      'service_1xlg2ca',     // replace
+      'template_u481cpj',    // replace
+      templateParams,
+      'Mm142Xuh-fxT3urlP'      // replace
+    )
+    .then(() => {
+      toast.success("Form submitted successfully 🎉")
+      setname('')
+      setemail('')
+      setmessage('')
+    })
+    .catch(() => {
+      toast.error("Failed to send email ❌")
+    })
   }
 
   return (
@@ -39,6 +56,7 @@ function Contact() {
           value={name}
           onChange={(e) => setname(e.target.value)}
           placeholder="Enter Your Name"
+          required
         />
 
         <input
@@ -46,13 +64,14 @@ function Contact() {
           value={email}
           onChange={(e) => setemail(e.target.value)}
           placeholder="Enter Your Email"
+          required
         />
 
-        <input
-          type="password"
-          value={pass}
-          onChange={(e) => setpass(e.target.value)}
-          placeholder="Enter Your Password"
+        <textarea
+          value={message}
+          onChange={(e) => setmessage(e.target.value)}
+          placeholder="Enter Your Message"
+          required
         />
 
         <button type="submit">Submit</button>
@@ -64,9 +83,7 @@ function Contact() {
       <div className="footer">
         <div>
           <h5>YASH TOURS & TRAVEL</h5>
-          <p>
-            Your gateway to unforgettable journeys and adventures.
-          </p>
+          <p>Your gateway to unforgettable journeys and adventures.</p>
         </div>
 
         <div>
