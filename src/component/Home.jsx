@@ -1,5 +1,5 @@
 import React from 'react';
-import carImage from '../assets/image.png';
+import firstimage from '../assets/ChatGPT Image.png';
 import { Link } from 'react-router-dom';
 import './Home.css'; // ✅ make sure this is added
 
@@ -8,7 +8,7 @@ function Home() {
     <div className="container-fluid p-0">
 
       {/* Hero Image */}
-      <img src={carImage} alt="Car" className="img-fluid w-100 hover-zoom" />
+      <img src={firstimage} alt="first" className="img-fluid w-100 hover-zoom" />
 
       {/* Heading */}
       <h2 className="text-center text-primary mt-3 fs-5 fs-md-4 fs-lg-3">
